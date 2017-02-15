@@ -8,21 +8,7 @@ Please also make sure to read the whole assignment before getting started and to
 
 I also suggest that you use GitHub's "Network" view to monitor the state of your local and remote repository throughout the assignment. To do so, go to the GitHub page for REPO, select menu "Graphs" on the right, and then select the "Network" tab at the top. In this way, you will have a visual representation of how the repository evolves, which can be very useful for better understanding Git and how it operates. 
 
-Finally, I suggest that you practice the assignment on a separate repository and then perform the assignment on REPO when you feel comfortable with the various commands. If you were to make a mistake while working on REPO, however, and you wanted to restart from a clean slate, in most cases you should be able to do so by executing the following instructions:
-
-*	Run “git log” from within your local repository
-*	Get the last commit ID in the list (i.e., the one with the earliest date, which should have “Commit #1” as its associated comment.)
-*	Run in each of the two terminals, and from the root of your repo (directory cmsc355-vcu)
-  *	git checkout master
-  *	git branch -D development temp
-  *	git push origin :development
-  *	git push origin :temp
-  *	git tag -d Version1
-  *	git push origin :Version1
-  *	git reset --hard <last commit ID>
-  *	git push --force
-
-* IMPORTANT:	This is one of the few cases to the use of the “git push --force” command, as it can have disastrous effects. Some of the above commands may fail if you haven't yet done what they are trying to undo. These errors can be safely ignored. After resetting state, there is no need to re-clone the repository (i.e., there is no need to perform the first 5 steps of the instructions).
+Finally, I suggest that you practice the assignment on a separate repository and then perform the assignment on REPO when you feel comfortable with the various commands. 
   
 ###Assignment Instructions
 ####Part 1 (Terminal 1)
@@ -75,4 +61,4 @@ Before you start, make sure to specify your name and email address using command
 
 At this point you are done, and your remote repository should look like the one in the figure below in the "Network" view on GitHub. If it doesn’t, it means that you made a mistake in one of the steps. Given the fact that this assignment is fairly simple, as it mainly consists of executing the provided steps, I expect the network view to match the figure below exactly and will deduct points if this is not the case. Similarly, I expect all the commit messages and the content of the files in the repo to be correct.
 <img  alt="part3" src="https://cloud.githubusercontent.com/assets/1023063/22374035/5dada8ee-e472-11e6-8b2b-905295236771.png">
-To submit your assignment, post in Blackboard the commit ID for your submission, which you can obtain by running “git log -1” in Terminal 1 after the last (successful) command--the commit ID is the long hexadecimal number after "commit".
+To submit your assignment, post in Blackboard a link to the URL of your private repository.
